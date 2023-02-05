@@ -487,7 +487,7 @@ countySel.onchange = function () {
 countySel.onchange(); // reset in case page is reloaded
 
 stateSel.onchange = function () {
-    districtSel.length = 1; // remove all options bar first
+    districtSel.length = 1; // remove all options bar first 
     if (this.selectedIndex < 1) return; // done
     var district = stateObject[countySel.value][this.value];
     for (var i = 0; i < district.length; i++) {
